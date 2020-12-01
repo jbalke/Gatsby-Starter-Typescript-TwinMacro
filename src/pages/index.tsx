@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 import tw, { styled } from 'twin.macro';
 import Layout from '../components/Layout';
 
-const Container = styled.div`
+const Container = styled.main`
   ${tw`bg-gray-100 w-full`}
   padding: 15px;
 `;
