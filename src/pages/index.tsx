@@ -2,16 +2,13 @@ import React, { ReactElement } from "react"
 import Layout from "../components/Layout"
 import { graphql, PageProps } from "gatsby"
 import tw, { styled } from "twin.macro"
+import { Site } from "../graphqlTypes"
 
 // Please note that you can use https://github.com/dotansimha/graphql-code-generator
 // to generate all types from graphQL schema
 interface IndexPageProps extends PageProps {
   data: {
-    site: {
-      siteMetadata: {
-        siteName: string
-      }
-    }
+    site: Site
   }
 }
 
