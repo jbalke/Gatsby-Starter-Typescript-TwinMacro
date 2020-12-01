@@ -1,4 +1,5 @@
 .cache
+.eslintrc.js
 package.json
 package-lock.json
 yarn.lock
@@ -8,3 +9,4 @@ postcss.config.js
 babel-plugin-macros.config.js
 /node_modules/
 /public/
+/src/generated/graphql.ts
