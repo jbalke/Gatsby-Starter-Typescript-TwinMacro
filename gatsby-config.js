@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 /**
  * Configure your Gatsby site with this file.
  *
@@ -6,5 +8,23 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    siteName: `Using TypeScript Example`,
+    exampleUrl: `https://github.com/gatsbyjs/gatsby/tree/master/examples/using-typescript`,
+  },
+  plugins: [
+    {
+      resolve: `gatsby-plugin-emotion`,
+      options: {
+        // Accepts the following options, all of which are defined by `@emotion/babel-plugin` plugin.
+        // The values for each key in this example are the defaults the plugin uses.
+        sourceMap: true,
+        autoLabel: "dev-only",
+        labelFormat: `[local]`,
+        cssPropOptimization: true,
+      },
+    },
+    `gatsby-plugin-postcss`,
+    `gatsby-plugin-react-helmet`,
+  ],
 }

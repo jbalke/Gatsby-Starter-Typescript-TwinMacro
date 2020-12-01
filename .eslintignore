@@ -1,0 +1,10 @@
+.cache
+package.json
+package-lock.json
+yarn.lock
+tailwind.config.js
+gatsby-config.js
+postcss.config.js
+babel-plugin-macros.config.js
+/node_modules/
+/public/
