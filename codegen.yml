@@ -1,6 +1,5 @@
 schema: http://localhost:8000/___graphql
 documents:
-  - ./src/graphql/**/*.graphql
   - ./src/**/*.{ts,tsx}
   - ./node_modules/gatsby-transformer-sharp/!(node_modules)/**/*.js
 generates:

@@ -2711,3 +2711,17 @@ export type IndexQueryQuery = (
     )> }
   )> }
 );
+
+export type IndexQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type IndexQuery = (
+  { __typename?: 'Query' }
+  & { site?: Maybe<(
+    { __typename?: 'Site' }
+    & { siteMetadata?: Maybe<(
+      { __typename?: 'SiteSiteMetadata' }
+      & Pick<SiteSiteMetadata, 'siteName'>
+    )> }
+  )> }
+);
